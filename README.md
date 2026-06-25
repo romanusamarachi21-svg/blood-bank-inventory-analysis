@@ -171,8 +171,7 @@ By integrating operational blood bank data with business intelligence tools, thi
 blood-bank-inventory-analysis/
 │
 ├── data/
-│   ├── raw/                    # Original synthetic dataset
-│   └── cleaned/                # Cleaned and validated data
+│   └── cleaned               # Cleaned and validated data
 │
 ├── sql/
 │   └── analysis_queries.sql    # All SQL queries used for analysis
@@ -198,7 +197,7 @@ blood-bank-inventory-analysis/
    git clone https://github.com/romanusamarachi21-svg/blood-bank-inventory-analysis.git
    ```
 
-2. **Explore the data** — start with the `/data/cleaned/` folder for the analysis-ready dataset.
+2. **Explore the data** — start with the `/data/blood_bank_inventory_dataset.csv` folder for the analysis-ready dataset.
 
 3. **Run the SQL queries** — open `sql/analysis_queries.sql` in any SQL client (PostgreSQL, MySQL, or SQL Server compatible).
 
