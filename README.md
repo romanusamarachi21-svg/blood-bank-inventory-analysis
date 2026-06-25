@@ -1,4 +1,3 @@
-# blood-bank-inventory-analysis
 # 🩸 Blood Bank Inventory & Management — Data Analysis Case Study
 
 ## Table of Contents
@@ -42,7 +41,7 @@ Blood bank managers face two simultaneous challenges:
 
 | Attribute | Detail |
 |---|---|
-| **Source** | Simulated / Synthetic Dataset |
+| **Source** | Synthetically generated using Python |
 | **Size** | 15,000 rows |
 | **Scope** | Multiple hospitals, blood types, departments, and time periods |
 | **Fields** | Blood type, hospital name, department, units collected, units used, units expired, storage duration, collection date, expiry date, wastage cost |
@@ -56,7 +55,7 @@ Blood bank managers face two simultaneous challenges:
 | Tool | Purpose |
 |---|---|
 | **SQL** | Data extraction, aggregation, and exploratory analysis |
-| **Python** | Data cleaning, preparation, and validation |
+| **Python** | Synthetic data generation and validation |
 | **Power BI** | Interactive dashboard and data visualisation |
 
 ---
@@ -64,14 +63,14 @@ Blood bank managers face two simultaneous challenges:
 ## Data Workflow
 
 ```
-Raw Data
+Raw Data Generation
    │
    ▼
-Python (Cleaning & Validation)
-   │  - Handled missing values
-   │  - Standardised blood type labels and date formats
-   │  - Validated unit counts and cost figures
-   │  - Removed duplicates and outliers
+Python (Data Generation & Validation)
+   │  - Generated 15,000 rows of realistic synthetic data
+   │  - Defined blood type distributions, hospital names, and departments
+   │  - Validated data integrity and unit counts
+   │  - Ensured consistency across fields before export
    ▼
 SQL (Analysis)
    │  - Aggregated inventory levels by blood type and hospital
@@ -97,8 +96,8 @@ Power BI (Visualisation)
 - O- units have the **shortest average storage duration of just 5 days**, indicating they are consumed almost immediately after collection.
 
 ### 2. 💸 AB+ Drives the Highest Wastage
-- **AB+ has the highest wastage rate at 24.8%**, driven by consistent overstocking relative to actual demand.
-- Its **average storage duration of 27 days** — the longest of all blood types — suggests units are sitting in inventory far longer than necessary, increasing the risk of expiry.
+- **AB+ has the highest wastage rate at 27.8%**, driven by consistent overstocking relative to actual demand.
+- Its **average storage duration of ~28 days** — the longest of all blood types — suggests units are sitting in inventory far longer than necessary, increasing the risk of expiry.
 
 ### 3. 📅 Demand Peaks in October, Drops in February
 - **October records the highest monthly demand**, likely aligned with seasonal health peaks, increased surgical activity, or accident rates.
@@ -109,6 +108,9 @@ Power BI (Visualisation)
 - **A+ has the highest wastage cost overall across the dataset**, pointing to systematic overordering of this blood type.
 
 ### Summary Table
+
+![Blood Type Analysis](assets/blood_type_analysis.png)
+
 
 | Blood Type | Shortage Rate | Wastage Rate | Utilisation Rate | Avg Storage Duration |
 |---|---|---|---|---|
@@ -137,6 +139,25 @@ LUTH's wastage cost of ₦12.2M warrants a review of its ordering policies, stor
 **5. Maintain Fast-Track Protocols for Emergency Departments**
 Since Emergency, Surgery, and ICU departments are the top consumers of O-, blood banks should maintain dedicated O- reserves for these departments with automatic replenishment triggers.
 
+**6. Promote Compatible Blood Group Substitution Where Clinically Appropriate**
+To preserve scarce O- inventory, hospitals should establish clinical protocols that encourage the use of ABO-compatible blood groups wherever medically appropriate. O- units should be reserved strictly for O- patients, emergency transfusions, and cases where no compatible alternative is available. This ensures that the universal donor supply is protected for situations where it is truly irreplaceable.
+
+---
+
+## Expected Business Impact
+
+Effective implementation of these recommendations is projected to deliver measurable improvements across both clinical and operational dimensions:
+
+| Impact Area | Expected Outcome |
+|---|---|
+| **Blood Product Availability** | Significant reduction in critical shortages, particularly for high-demand types such as O- |
+| **Wastage & Financial Loss** | Lower expiry rates and reduced wastage costs, especially for AB+ and A+ |
+| **Inventory Utilisation** | More balanced stock levels aligned with actual consumption and seasonal demand patterns |
+| **Patient Care Quality** | Greater reliability of blood supply during emergencies, surgeries, and peak-demand periods |
+| **Procurement Efficiency** | Data-driven ordering cycles that respond proactively to demand trends rather than reactively to shortages |
+
+By integrating operational blood bank data with business intelligence tools, this project demonstrates how healthcare organisations can leverage analytics to make more informed procurement decisions, minimise preventable waste, and ultimately strengthen the reliability and quality of patient care.
+
 ---
 
 ## Dashboard Preview
@@ -161,7 +182,7 @@ blood-bank-inventory-analysis/
 │   └── analysis_queries.sql    # All SQL queries used for analysis
 │
 ├── python/
-│   └── data_cleaning.py        # Python scripts for cleaning & validation
+│   └── data_generation.py      # Python script for synthetic data generation & validation
 │
 ├── powerbi/
 │   └── blood_bank_dashboard.pbix  # Power BI dashboard file
@@ -185,7 +206,7 @@ blood-bank-inventory-analysis/
 
 3. **Run the SQL queries** — open `sql/analysis_queries.sql` in any SQL client (PostgreSQL, MySQL, or SQL Server compatible).
 
-4. **Review the Python scripts** — open `python/data_cleaning.py` to see the cleaning and validation steps.
+4. **Review the Python script** — open `python/data_generation.py` to see how the synthetic dataset was built and validated.
 
 5. **Open the dashboard** — load `powerbi/blood_bank_dashboard.pbix` in Power BI Desktop to interact with the visualisations.
 
@@ -196,8 +217,11 @@ blood-bank-inventory-analysis/
 **[Romanus Grace Amarachi]**
 Data Analyst | SQL • Python • Power BI
 
-[LinkedIn](https://linkedin.com/in/your-profile) • [GitHub](https://github.com/romanusamarachi21-svg) • [Portfolio](https://your-portfolio.com)
+[LinkedIn](https://linkedin.com/in/grace-romanus-95b29a3b3) • [GitHub](https://github.com/romanusamarachi21-svg) • [Portfolio](https://romanusamarachi21-svg.github.io/grace-portfolio/)
 
 ---
 
 *This project uses a simulated dataset for portfolio and educational purposes. No real patient or donor data was used.*
+
+---
+
