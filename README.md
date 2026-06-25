@@ -111,13 +111,6 @@ Power BI (Visualisation)
 
 ![Dashboard Overview](assets/summary_table.png)
 
-
-| Blood Type | Shortage Rate | Wastage Rate | Utilisation Rate | Avg Storage Duration |
-|---|---|---|---|---|
-| O- | 96% | — | 94.9% | 5 days |
-| AB+ | — | 24.8% | — | 27 days |
-| A+ | — | Highest Cost | — | — |
-
 ---
 
 ## Recommendations
@@ -162,10 +155,9 @@ By integrating operational blood bank data with business intelligence tools, thi
 
 ## Dashboard Preview
 
-> *Power BI dashboard screenshots or embedded visuals go here.*
-
-![Dashboard Overview](assets/dashboard_overview.png)
-![Blood Type Analysis](assets/blood_type_analysis.png)
+![Dashboard Overview](assets/Executive_overview.png)
+![Blood Type Analysis](assets/risk_analysis.png)
+![Financial_Impact Overview](assets/financial_impact.png)
 
 ---
 
