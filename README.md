@@ -109,7 +109,7 @@ Power BI (Visualisation)
 
 ### Summary Table
 
-![Summary](assets/summary table.png)
+![Dashboard Overview](assets/summary_table.png)
 
 
 | Blood Type | Shortage Rate | Wastage Rate | Utilisation Rate | Avg Storage Duration |
