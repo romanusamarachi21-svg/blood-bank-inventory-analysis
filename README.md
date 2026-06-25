@@ -156,7 +156,11 @@ By integrating operational blood bank data with business intelligence tools, thi
 ## Dashboard Preview
 
 ![Dashboard Overview](assets/Executive_overview.png)
+
+
 ![Blood Type Analysis](assets/risk_analysis.png)
+
+
 ![Financial_Impact Overview](assets/financial_impact.png)
 
 ---
@@ -191,7 +195,7 @@ blood-bank-inventory-analysis/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/blood-bank-inventory-analysis.git
+   git clone https://github.com/romanusamarachi21-svg/blood-bank-inventory-analysis.git
    ```
 
 2. **Explore the data** — start with the `/data/cleaned/` folder for the analysis-ready dataset.
