@@ -201,9 +201,7 @@ blood-bank-inventory-analysis/
 
 3. **Run the SQL queries** — open `sql/analysis_queries.sql` in any SQL client (PostgreSQL, MySQL, or SQL Server compatible).
 
-4. **Review the Python script** — open `python/data_generation.py` to see how the synthetic dataset was built and validated.
-
-5. **Open the dashboard** — load `powerbi/blood_bank_dashboard.pbix` in Power BI Desktop to interact with the visualisations.
+4. **Open the dashboard** — load `powerbi/blood_bank_dashboard.pbix` in Power BI Desktop to interact with the visualisations.
 
 ---
 
