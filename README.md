@@ -210,7 +210,7 @@ blood-bank-inventory-analysis/
 **[Romanus Grace Amarachi]**
 Data Analyst | SQL • Python • Power BI
 
-[LinkedIn](https://linkedin.com/in/grace-romanus-95b29a3b3) • [GitHub](https://github.com/romanusamarachi21-svg) • [Portfolio](https://romanusamarachi21-svg.github.io/grace-portfolio/)
+[LinkedIn](https://linkedin.com/in/romanusamara) • [GitHub](https://github.com/romanusamarachi21-svg) • [Portfolio](https://romanusamarachi21-svg.github.io/portfolio/)
 
 ---
 
